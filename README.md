@@ -1,3 +1,4 @@
 # chatbox
 
-Basic Chat Application in PHP
+	- Basic Chat Application in PHP
+	- Includes Image uploading
