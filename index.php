@@ -38,23 +38,22 @@
 </div>
 
 <form class="chatbox" method="post" action="index.php" enctype="multipart/form-data">
+		
 		<div class="element_1">
-		<input type="text" name="name" placeholder="Enter Name">
-		</input>
+			<input type="text" name="name" placeholder="Enter Name"></input>
 		</div>
 		<div class="element_2">
-		<textarea name="message" placeholder="Enter Message"></textarea><br/>
+			<textarea name="message" placeholder="Enter Message"></textarea><br/>
 		</div>
-			
-
-			<!-- <label for="file-upload" class="custom-file-upload">
-    			<i class="fa fa-cloud-upload" name="imageUpload" id="imageUpload"></i> +
-    			<input id="file-upload" type="file" name="imageUpload"/>
-				</label> -->
-			<input type="file" name="imageUpload" id="imageUpload"/>
-
 		
-		<input type="submit" name="submit" value="Send It"/>
+		<div class="fileUpload">
+			<span class="custom-span" name="imageUpload">+</span>
+				<!-- <p class="custom-para" name="imageUpload">Add Images</p> -->
+				<input id="uploadBtn" type="file" class="upload" name="imageUpload"/>
+			</div>
+			
+		
+	<input type="submit" name="submit" value="Send It"/>
 </form>
 
 </body>
