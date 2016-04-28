@@ -7,8 +7,6 @@ if(isset($_POST['submit']))
 				$name = $_POST['name'];
 				$msg = $_POST['message'];
 				$ip=get_client_ip();
-				
-				
 
 				if(strlen($name) == 0 || strlen($msg) == 0){
 						echo "Invalid Message!!!";
@@ -49,14 +47,11 @@ if(isset($_POST['submit']))
 						$query = "INSERT INTO `records`.`chat` (name,message,ipadr,image_name,image_type)
 						VALUES ('$name','$msg','$ip','$target_name','$imageFileType')";
 						$run = $conn->query($query);
-						
-						
-						
 
 					if($run){
 						echo "<embed loop='false' src='include/chat.wav' hidden='true' autoplay='true'>";
 						}
-					}	
+					}
 
 			}
 

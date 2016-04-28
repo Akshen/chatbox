@@ -5,8 +5,7 @@ require('connections.php');
 		$run = $conn->query($query);
 
 		while($row = $run->fetch_array()) :
-					
-	?>		
+?>
 
 	<div style="padding: 5px;">
 			<span style="color:#3498DB;"><?php echo $row['name'] ?> :</span>
@@ -18,9 +17,8 @@ require('connections.php');
 			    <span><img src="uploads/<?php echo $row['image_name'] ?>" style="margin-top:5px;margin-left:5px;width:250px;height:200px;"></span>
 			    <hr style="border-top: dotted 1px;color:#E4F1FE;">
 			<?php endif; ?>
-			
 	</div>
 
-	<?php 
+	<?php
 		endwhile;
 	 ?>
